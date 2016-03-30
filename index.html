@@ -101,8 +101,17 @@
           /*  ++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
           /* PUT ANY CHANGES TO THE JAVASCRIPT HERE  */
-          
-          
+          drawImageIOSFix(context2,img, 0, 0, img.naturalWidth, img.naturalHeight, 0, 0, 600, 500);
+          //var image2 = context2.getImageData(0, 0 600, 500);
+          // This above line of code gets the image data for the second canvas
+          //var data = image2.data;
+          //for(var i = 0; i < data.length; i += 4) {
+          //data[i] = 0;
+          // The above line of code sets the R value to 0
+          //data[i + 1] = 0;
+          // The above line of code sets the G value to 0
+          //}
+          //context2.putImageData(image2, 0, 0);
           
           
         } // end of img.onload
