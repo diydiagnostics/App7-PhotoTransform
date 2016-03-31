@@ -102,11 +102,12 @@
 
           /* PUT ANY CHANGES TO THE JAVASCRIPT HERE  */
           drawImageIOSFix(context2,img, 0, 0, img.naturalWidth, img.naturalHeight, 0, 0, 600, 500);
+          // the above line of code creates the second image data that will be turned blue
           var image2 = context2.getImageData(0, 0, 600, 500);
           // This above line of code gets the image data for the second canvas
           var data = image2.data;
           
-          // the below for loop goes through the pixels and only takes the blue pigments of them
+          // the below for loop goes through the pixels of the image and only takes the blue pigments of them
           for(var i = 0; i < data.length; i += 4) {
             data[i] = 0;
           // The above line of code sets the R value to 0
